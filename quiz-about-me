@@ -1,0 +1,30 @@
+var readlineSync = require('readline-sync');
+var userAnswer = readlineSync.question("am i older then you ");
+var score = 0;
+
+console.log("your answer is "+userAnswer);
+if(userAnswer == "yes"){
+  console.log("you are right");
+  score++;
+  console.log("your score is "+score);
+}else{
+  console.log("you are wrong");
+  score--;
+  console.log("your score is "+score);
+}
+
+
+
+var readlineSync = require('readline-sync');
+var userAnswer = readlineSync.question("am i from jodhpur  ");
+
+console.log("your answer is "+userAnswer);
+if(userAnswer == "no"){
+  console.log("you are right");
+  score++;
+  console.log("your score is "+score);
+}else{
+  console.log("you are wrong");
+  score = score--;
+  console.log("your score is "+score);
+}
